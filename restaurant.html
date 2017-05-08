@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Restaurant</title>
+
+<script type="text/javascript">
+function cal()
+{
+    var t1=document.form1.s1.value;
+    var t2=document.form1.s2.value;
+    var t3=document.form1.s3.value;
+    var t4=document.form1.s4.value;
+    var t5=document.form1.s5.value;
+     var sum1=t1*210;
+     var sum2=t2*200;
+    var sum3=t3*150;
+     var sum4=t4*120;
+     var sum5=t5*140;
+   
+    document.write("<table><tr><th>ITEM</th><th>PRICE</th><th>QUANTITY</th><th>AMOUNT</th></tr>");
+   
+	document.write("<tr><td>Mutton Biriyani</td><td>210.00</td><td>" + t1 +"</td><td>"+sum1+"</td></tr>");
+	
+	document.write("<tr><td>Chicken Friedrice</td><td>200.00</td><td>" + t2 +"</td><td>"+sum2+"</td></tr>");
+	
+	document.write("<tr><td>Egg Noodles</td><td>150.00</td><td>" + t3 +"</td><td>"+sum3+"</td></tr>");
+	
+	document.write("<tr><td>Mushroom Dosa</td><td>120.00</td><td>" + t4 +"</td><td>"+sum4+"</td></tr>");
+	
+	document.write("<tr><td>Kothu Parota</td><td>140.00</td><td>" + t5 +"</td><td>"+sum5+"</td></tr>");
+	var total=sum1+sum2+sum3+sum4+sum5;
+    document.write("<tr><th>TOTAL AMOUNT</th><td></td><td></td><td>"+total+"</td></tr></table>");
+	}
+</script>
+<style>
+body {
+ background-color:lightblue;
+ }
+h1 {
+    color: maroon;
+    margin-left: 40px;
+	text-align: center;
+ } 
+p {
+  padding: 40px 30px 40px 20px;
+  text-align: center;
+ }
+table {
+  text-align: center;
+  background-color: #f1f1c1;
+}
+.button {
+    background-color: white; 
+    border: none;
+    color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Welcome to Boo Restaurant!!!</h1>
+
+<h2><marquee>Enjoy the food!!!</marquee></h2>
+
+<form name="form1">
+<pre>
+<b><font face="verdana" color="green" size="6">ORDER HERE</font></b>
+ <br><font face="Arial" size="5">            <b>Mutton Biriyani</b></font>       <font size="4">210.00</font>      <select name="s1">
+                       <option>0</option>
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+</select> </br>
+<br><font face="Arial" size="5">             <b>Chicken Friedrice</b></font>     <font size="4">200.00</font>      <select name="s2">
+                       <option>0</option>
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+</select> </br>
+<br><font face="Arial" size="5">             <b>Egg Noodles</b></font>           <font size="4">150.00</font>      <select name="s3">
+                       <option>0</option>
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+</select> </br>
+<br><font face="Arial" size="5">             <b>Mushroom Dosa</b></font>           <font size="4">120.00</font>      <select name="s4">
+                       <option>0</option>
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+</select> </br>
+<br><font face="Arial" size="5">             <b>Kothu Barota</b></font>           <font size="4">140.00</font>      <select name="s5">
+                       <option>0</option>
+                       <option>1</option>
+                       <option>2</option>
+                       <option>3</option>
+                       <option>4</option>
+</select> </br>
+<input type="button" value="Submit" onclick="cal()">
+
+
+</pre>
+</form>
+</body>
+</html>
